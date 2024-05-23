@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+         function thankYou(){
+            var name=document.fv.name.value;
+            var mobile=document.fv.mobile.value;
+            var email=document.fv.email.value;
+            var reg=/^([a-zA-Z0-9\._]+@[a-z]+).([a-z]+){2,3}$/;
+            var password=document.fv.password.value;
+            var checkpassword=document.fv.checkpassword.value;
+            if(name==''){
+                alert("please enter your name");
+                return false;
+            }
+            if(name.length<3){
+               alert("please check your name");
+               return false;
+            }
+            if(isNaN(mobile)||mobile.length<10){
+            alert("please enter your mobile number");
+            return false;   
+            }
+            if(email==""){
+                alert("enter your email id");
+                return false;
+            }
+            if(!email.match(reg)){
+                alert("please check your email id");
+                return false;
+            }
+            if(password==""){
+                alert("enter a valid password");
+                return false;
+            }
+            if(password.length<8){
+                alert("password must carry minimum 8 characters");
+                return false;
+            }
+            if(checkpassword==""){
+                alert=("please enter your re-type field");
+                return false;
+            }
+            if(!checkpassword.match(password)){
+                alert("please check your password and re-type password")
+                return false;
+            }
+            return true; 
+         }
+          
+    </script>
+</head>
+<body>
+      <h1> this is about validation</h1>
+      <form  name="fv" onsubmit="return thankYou()">
+        <input type="text" name="name" placeholder="enter your name"/>
+        <input type="text" name="mobile" placeholder="enter your mobile number"/>
+        <input type="text" name="email" placeholder="enter your email id"/>
+        <input type="password" name="password" placeholder="enter your password"/>
+        <input type="password" name="checkpassword" placeholder="re-type your password"/>
+        <input type="submit" value="submit"/>
+        <input type="reset"  value="clear"/>
+      </form>
+</body>
+</html>

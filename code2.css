@@ -1,0 +1,20 @@
+.bgimg2{
+    background-image:url('https://img.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148580778.jpg?w=900&t=st=1680500526~exp=1680501126~hmac=37217f597f34711969b4d076c942a2e7734bf61e8d316a37a6364f99eb3ce584') ;
+    background-size: cover;
+    height: 160vh;
+}
+.mpbilebrand{
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+}
+.layoutcard2{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px;
+}
+.brandimge{
+    height: 160px;
+    width: 120px;
+}
